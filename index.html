@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    
+
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="main flex bg-black">
+      <div class="left">
+        <div class="home rounded bg-grey m1 p1">
+          <div class="logo">
+            <img src="logo.svg" class="invert" alt="logo" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m1 p1">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="playlist" />
+           <h2 class="sngname">Your Library</h2>
+          </div>
+          <div class="msgg">
+            <p class="pp1">Create Your First Playlist</p>
+            
+            <br>
+            <p>It's easy, we'll help you</p>
+            <button class="plist" id="plist">Create Playlist</button>
+          </div>
+          <div class="msgg">
+            <p class="pp1">Start listning your faviourate songs</p>
+          <br>
+            <p>Browse now</p>
+            <button class="plist" >Play now</button>
+          </div>
+          <div class="footer">
+            audio
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right rounded bg-grey">
+        <div class="header rounded">
+          <div class="nav">
+            <svg
+            id="previous"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="bb2"
+            >
+              <path
+                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <img src="pause.svg" class="pause" id="masterplay">
+            <svg
+            id="next"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="bb1"
+            >
+              <path
+                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="buttons">
+            <!-- <a href="https://www.spotify.com/in-en/premium/"><button class="premium">Premium</button></a> -->
+            <button class="signupbtn" ><a href="signup.html">Sign up</a></button>
+            <button class="loginbtn"><a href="login.html">Log in</a></button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <h1>Trending Songs</h1>
+          <div class="card-box">
+            
+            <div class="card" id="1" >
+              <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            
+              <img src="songs/cover/cover.jpeg" alt="" />
+             <h2 >Espresso</h2>
+            </div>
+            <div class="card" id="2" >
+              <div class="play" >
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (1).jpg" alt="" />
+             <h2 class="sngname">My Prime</h2>
+            </div>
+            <div class="card" id="3">
+                <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (2).jpg" alt="" />
+             <h2 class="sngname">Sao paulo</h2>
+              
+            </div>
+            <div class="card" id="4" >  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (10).jpg" alt="" />
+             <h2 class="sngname">Maniac</h2>
+            </div>
+            <div class="card" id="5">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (4).jpg" alt="" />
+             <h2 class="sngname">Dior</h2>
+            </div>
+            <div class="card" id="6">  <div class="play" id="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (5).jpg" alt="" />
+             <h2 class="sngname">One Love</h2>
+            </div>
+            <div class="card" id="7">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (6).jpg" alt="" />
+             <h2 class="sngname">Get Up</h2>
+            </div>
+            <div class="card" id="8">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (7).jpg" alt="" />
+             <h2 class="sngname">Bachke Bachke</h2>
+            </div>
+            <div class="card" id="9">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (8).jpg" alt="" />
+             <h2 class="sngname">Victory Anthem</h2>
+            </div>
+            <div class="card" id="10">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (9).jpeg" alt="" />
+             <h2 class="sngname">Aam Jahe Munde</h2>
+            </div>
+            <div class="card" id="11">  <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (3).jpg" alt="" />
+             <h2 class="sngname">G.O.A.T</h2>
+            </div>
+            <div class="card" id="12"> 
+               <div class="play">
+                <svg  width="24" height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="songs/cover/cover (11).jpeg" alt="" />
+             <h2 class="sngname">Fe!n</h2>
+            </div>
+            <div class="card" id="13"> 
+              <div class="play">
+               <svg  width="24" height="24"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                 <path
+                   d="M5 20V4L19 12L5 20Z"
+                   stroke="#141B34"
+                   fill="#000"
+                   stroke-width="1.5"
+                   stroke-linejoin="round"
+                 />
+               </svg>
+             </div>
+             <img src="songs/cover/cover (12).jpg" alt="" />
+            <h2 class="sngname">Shoorveer</h2>
+           </div>
+
+           <div class="card" id="14"> 
+            <div class="play">
+             <svg  width="24" height="24"
+               viewBox="0 0 24 24"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+               <path
+                 d="M5 20V4L19 12L5 20Z"
+                 stroke="#141B34"
+                 fill="#000"
+                 stroke-width="1.5"
+                 stroke-linejoin="round"
+               />
+             </svg>
+           </div>
+           <img src="songs/cover/cover (13)" alt="" />
+          <h2 class="sngname">White Brown Black</h2>
+         </div>
+
+
+         <div class="card" id="15" > 
+          <div class="play">
+           <svg  width="24" height="24"
+             viewBox="0 0 24 24"
+             fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+             <path
+               d="M5 20V4L19 12L5 20Z"
+               stroke="#141B34"
+               fill="#000"
+               stroke-width="1.5"
+               stroke-linejoin="round"
+             />
+           </svg>
+         </div>
+         <img src="songs/cover/cover (14).jpg " />
+        <h2 class="sngname">Lemonade</h2>
+       </div>
+           
+
+       <div class="card" id="16"> 
+        <div class="play">
+         <svg  width="24" height="24"
+           viewBox="0 0 24 24"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+           <path
+             d="M5 20V4L19 12L5 20Z"
+             stroke="#141B34"
+             fill="#000"
+             stroke-width="1.5"
+             stroke-linejoin="round"
+           />
+         </svg>
+       </div>
+       <img src="songs/cover/cover (15).jpg" alt="" />
+      <h2 class="sngname">Case</h2>
+     </div>
+     
+     <div class="card" id="17"> 
+      <div class="play">
+       <svg  width="24" height="24"
+         viewBox="0 0 24 24"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+         <path
+           d="M5 20V4L19 12L5 20Z"
+           stroke="#141B34"
+           fill="#000"
+           stroke-width="1.5"
+           stroke-linejoin="round"
+         />
+       </svg>
+     </div>
+     <img src="songs/cover/cover (16).jpg" alt="" />
+    <h2 class="sngname">Maharani</h2>
+   </div>
+
+
+   <div class="card" id="18"> 
+    <div class="play">
+     <svg  width="24" height="24"
+       viewBox="0 0 24 24"
+       fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+       <path
+         d="M5 20V4L19 12L5 20Z"
+         stroke="#141B34"
+         fill="#000"
+         stroke-width="1.5"
+         stroke-linejoin="round"
+       />
+     </svg>
+   </div>
+   <img src="songs/cover/cover (17).jpg" alt="" />
+  <h2 class="sngname">Jee Nii Lagda</h2>
+ </div>
+
+ <div class="card" id="19"> 
+  <div class="play">
+   <svg  width="24" height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+     <path
+       d="M5 20V4L19 12L5 20Z"
+       stroke="#141B34"
+       fill="#000"
+       stroke-width="1.5"
+       stroke-linejoin="round"
+     />
+   </svg>
+ </div>
+ <img src="songs/cover/cover (18).jpg" alt="" />
+<h2 class="sngname">Zulfaan</h2>
+</div>
+
+
+<div class="card" id="20"> 
+  <div class="play">
+   <svg  width="24" height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+     <path
+       d="M5 20V4L19 12L5 20Z"
+       stroke="#141B34"
+       fill="#000"
+       stroke-width="1.5"
+       stroke-linejoin="round"
+     />
+   </svg>
+ </div>
+ <img src="songs/cover/cover (19).jpg" alt="" />
+<h2 class="sngname">Vaathi Coming</h2>
+</div>
+          </div>
+        </div>
+
+        <!-- <div class="playbar">
+          <div class="seekbar" >
+            <div class="circle"  id="progressbar" ></div>
+          </div>
+          <div class="songinfo">
+            <div class="progressbar"></div>
+          </div>
+          <div class="songbuttons">
+            <img src="prvesong.svg" alt="" />
+            <img src="play.svg"  id="masterplay" />
+            <img src="nextsong.svg" id="playPauseBtn" />
+          </div>
+          <div class="songtime"></div>
+        </div> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
