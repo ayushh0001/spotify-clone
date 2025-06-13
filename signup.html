@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Spotify</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="./img/spotify-logo.png" alt=""></div>
+        <h1>Sign up to <span>start listening</span></h1>
+
+        <form action="" id="form" onsubmit="call()">
+            <label for="">Email address</label><br>
+            <input type="text" placeholder="name@domain.com" id="mail"><br>
+            <p id="msg"></p>
+            <div class="alt">
+                <a href="">Use phone number instead. </a><br>
+            </div> 
+            
+            <input type="submit" class="next" value="Next" id="btn">
+
+            <div class="line"></div> <br>
+
+          </form>
+            <button class="icon-btn"><img src="./img/google.png" alt="">Sign up with Google</button>
+            <button class="icon-btn"><img src="./img/facebook.png" alt="">Sign up with Facebook</button>
+            <button class="icon-btn"><img src="./img/apple.png" alt="">Sign up with Apple</button>
+
+            <div class="line2"></div>
+
+            <div class="already">Already have an account? <a href="./login.html" class="login-here">Log in here</a></div>
+
+            <p class="term">This site is protected by reCAPTCHA and the Google <br> <a href="" class="privacy">Privacy Policy </a> and <a href="" class="privacy">Term of Service</a> apply.</p>
+    </div>
+
+
+   <script>
+    const form = document.getElementById("form");
+    const mail = document.getElementById("mail").value;
+    const message = document.getElementById("msg");
+
+     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    form.addEventListener("submit", function (a) {
+      a.preventDefault(); // Prevent actual form submission
+
+      const mail = document.getElementById("mail").value.trim();
+
+      if (mail === "") {
+        alert("Please enter your email address!");
+      } 
+
+      else if  (!emailPattern.test(mail)) {
+         
+        message.textContent = "Enter a valid email.";
+        message.style.color = "red";
+      }
+      
+      else {
+        // Redirect to index.html
+        window.location.href = "index.html";
+      }
+    });
+  </script>
+
+</body>
+</html>

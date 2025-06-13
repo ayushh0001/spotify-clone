@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+background-color: rgb(16, 16, 16);
+overflow-x: hidden;
+
+}
+.main{
+    position: relative;
+    left: 18%;
+    
+}
+.head{
+    display: flex;
+   
+}
+.head img{
+    height: 25px;
+    margin-right: 5px;
+    filter: invert();
+}
+.bold{
+    font-weight:bolder;
+   
+}
+.box{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+
+}
+.prem{
+    color: white;
+    position: relative;
+    top: 4px;
+}
+.info{
+    color: white;
+    display: flex;
+    margin: 100px;
+    font-weight: bolder;
+}
+.p{
+   padding-bottom: 15px;
+}
+.heading{
+    color: white;
+    position: relative;
+    left: 18%;
+    top: 25px;
+}
+.subscription{
+    display: flex;
+    padding-left: 80px;
+   
+}
+.feature{
+    margin-left: 35px;
+    font-weight: lighter;
+    
+}
+.heading img{
+    filter: invert();
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+.box1{
+    margin-right: 30px;
+    background-color: rgb(34, 34, 34);
+    padding: 15px;
+
+    width: 320px;
+    border-radius: 15px;
+    height: 350px;
+}
+.box2{
+    margin-right: 30px;
+    background-color: rgb(34, 34, 34);
+    padding: 15px;
+ 
+    width: 320px;
+    border-radius: 15px;
+    height: 350px;
+}
+.type1 h3{
+    padding-top: 20px;
+    font-size: 1.7rem;
+    color: rgb(243, 183, 193);
+}
+.type2 h3{
+    padding-top: 20px;
+    font-size: 1.7rem;
+    color: rgb(255, 200, 98) !important;
+}
+.line{
+    width: 100%;
+    height: 0.3px;
+    margin: 32px 0px;
+    text-align: center;
+    background: #cccccc;
+    opacity: 0.5;
+}
+.benifit{
+    color: white;
+    margin-bottom: 8px;
+}
+.btn{
+   font-weight: bold;
+    width: 85%;
+    height: 45px;
+    border-radius: 30px;
+    margin-left: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+
+
+/* css for popup  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+}
+.container{
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    width: 120px;
+    height: 35px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 3px 2px 10px rgb(130, 127, 127);
+    cursor: pointer;
+}
+.btns:hover{
+    background-color: #27a93c;
+     color: rgb(0, 0, 0);
+}
+.popup{
+    width: 370px;
+    background: #1a1a1a;
+    color: rgb(233, 225, 225);
+    border-radius: 20px;
+    position: fixed;
+    top: 0%;
+    left: 45%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 10px 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-pop{
+visibility: visible;
+top: 50% ;
+ transform: translate(-50%,-50%) scale(1);
+ 
+
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.blur {
+  filter: blur(5px);
+  pointer-events: none; /* Optional: prevent clicks on blurred area */
+  user-select: none;
+}
+
+
+.popup img{
+    filter: invert(1);
+    
+}
+.popup p{
+    padding: 30px;
+}
+.top img{
+     width: 70px;
+     margin-top: -50px;
+}
+
+.start{
+     width: 145px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 3px 2px 10px rgb(130, 127, 127);
+}
+
+

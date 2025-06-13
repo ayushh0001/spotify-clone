@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="premium.css">
+  <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+  <div class="main-content">
+      <div class="main">
+        <div class="heading">
+            <img src="logo.svg" alt="">
+            <h2>Buy Spotify Premium</h2></div>
+        <div class="info "><h2 style="width: 35vh;
+            position: relative;
+            top: 70px;">Benefits included in Premium plan</h2>
+        <div class="feature">
+            <div class="p"> ✔ You can listen to music without advertising</div>
+            <div class="p"> ✔ Download and play offline</div>
+            <div class="p"> ✔ Play in any song order you like</div>
+            <div class="p"> ✔ High-quality sound</div>
+            <div class="p"> ✔ Listen to music with multiple friends in real-time Enjoy the Jam feature without restrictions</div>
+            <div class="p"> ✔  Organize the list of songs to play next</div>
+          
+        </div>
+      </div>
+      <div class="subscription">
+        <div class="box1">
+            <div class="head">
+                <img src="favicon.png" alt="">
+                <p class="bold prem">Premium</p>
+            </div>
+            <div class="type1"><h3>Standard</h3>
+            </div>
+            <p style="color: white;">399 rs Per month</p>
+            <div class="line"></div>
+            <div class="benifit">• 1 Premium Account</div>
+            <div class="benifit">  • Cancel at any time</div>
+            <button class="btn" type="submit"  style="background-color: rgb(243, 183, 193);">Buy Now</button>
+        </div>
+
+        <div class="box2">
+            <div class="head">
+                <img src="favicon.png" alt="">
+                <p class="bold prem">Premium</p>
+            </div>
+            <div class="type2"><h3>Duo</h3></div>
+            <p style="color: white;">699 rs Per month</p>
+            <div class="line"></div>
+            <div class="benifit">• 2 Premium Account</div>
+            <div class="benifit">  • Cancel at any time</div>
+            <button class="btn" id="buy1" style="background-color:rgb(255, 200, 98);">Buy Now</button>
+        </div>
+       
+    </div>
+
+   
+    </div>
+    </div>
+      <!-- popup -->
+        
+         <div class="container">
+        <!-- <button type="submit" onclick="openpop()" class="start">Start streaming</button> -->
+        <div class="popup" id="popup">
+            <img src="logo.svg" alt="" >
+            <h2>Thank you!</h2>
+            <p>Now you are a premium member of Spotify now you can enjoy Ad-free music and many more features. You can cancel it any time. </p>
+            <button type="submit" class="btns" id="btn" onclick="closepop()">Done</button>
+        </div>
+  </div>
+    <script>
+
+// let buy = document.querySelectorAll(".btns");
+
+// buy.forEach(function(button) {
+//     button.addEventListener("click", function() {
+//         alert("Subscription successfully purchased");
+//         window.location.href="index.html"
+//     });
+// });
+
+
+// const popup=document.getElementById("popup");
+// function openpop(){
+//     popup.classList.add("open-pop");
+// }
+
+// function closepop(){
+//     popup.classList.remove("open-pop");
+// }
+// const index=document.getElementById("btn");
+// index.addEventListener("click",function(){
+//      window.location.href="index.html"
+// })
+
+
+
+
+
+
+
+
+
+
+const popup = document.getElementById("popup");
+const doneBtn = document.getElementById("btn");
+const mainContent = document.querySelector(".main-content");
+
+// Function to open popup
+function openpop() {
+    popup.classList.add("open-pop");
+     mainContent.classList.add("blur");
+      document.body.classList.add("no-scroll");
+}
+
+// Function to close popup
+function closepop() {
+    popup.classList.remove("open-pop");
+     mainContent.classList.remove("blur");
+      document.body.classList.remove("no-scroll");
+}
+
+// Redirect to index.html when "Done" is clicked
+doneBtn.addEventListener("click", function () {
+    window.location.href = "index.html";
+});
+
+// Add click event to all "Buy Now" buttons
+const buyButtons = document.querySelectorAll(".btn");
+buyButtons.forEach(function(button) {
+    button.addEventListener("click", openpop);
+});
+
+
+    </script>
+</body>
+</html>

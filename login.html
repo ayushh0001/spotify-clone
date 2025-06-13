@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="./img/spotify-logo.png" alt=""></div>
+
+        <h1>Log in to Spotify</h1>
+
+        <button class="icon-btn"><img src="./img/google.png" alt="">Sign up with Google</button>
+        <button class="icon-btn"><img src="./img/facebook.png" alt="">Sign up with Facebook</button>
+        <button class="icon-btn"><img src="./img/apple.png" alt="">Sign up with Apple</button>
+        <button class="icon-btn">Continue with phone number</button>
+        <form action="" id="form">
+
+            <div class="line"></div>
+
+            <label for="name">Email or username</label><br>
+            <input type="text" placeholder="Email or username" id="name"><br>
+            <label for="password">Password</label><br>
+            <input type="password" placeholder="Password" id="password"><br>
+            <p id="msg"></p>
+    
+
+         <input type="submit" class="next" value="Log In">
+    
+            
+            
+            <div class="forget"><a href="forgot.html">Forget password?</a></div>
+
+            <div class="account">Don't have an account? <a href="./signup.html">Sign up for Spotify</a></div>
+
+
+        </form>
+
+        <p class="term">This site protected by reCAPTCHA and the google <br> <a href="" class="privacy">Privacy Policy</a>
+        and <a href="" class="privacy">Term of Service </a> apply.
+        </p>
+
+<script>
+
+const form=document.getElementById("form");
+ const message = document.getElementById("msg");
+const correctUserId = "ayush8596";
+   const correctPassword = "ayush0001@";
+
+form.addEventListener("submit",function(e){
+    e.preventDefault();
+
+       const name=document.getElementById("name").value.trim();
+       const password=document.getElementById("password").value.trim();
+
+
+if(name===""||password===""){
+    alert("both field must be filled !");
+}
+ else if (name===correctUserId && password===correctPassword){
+ window.location.href="index.html";
+}
+
+else{
+     message.textContent = "Ivalid ID or Password !";
+        message.style.color = "red";
+}
+})
+
+
+</script>
+    </div>
+</body>
+</html>
